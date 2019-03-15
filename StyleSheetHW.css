@@ -1,0 +1,249 @@
+﻿.loginFormat{
+    text-align:center;
+    display: block;
+}
+
+.registerFormat{
+    text-align:center;
+    display: block;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=tel], input[type=submit]{
+    padding: 12px 20px;
+    margin: 8px 0px;
+    box-shadow: black 1px 1px 10px;
+}
+
+
+@media screen and (max-width: 999px){
+
+    .gridContainer{
+        display:grid;
+        grid-template-rows: auto auto;
+        grid-gap: 0px;
+        /*height: 100vw;
+        width: 100vw;*/
+        
+    }
+
+
+
+        .gridSUBCONTAINER{
+            display:grid;
+            grid-template-columns: auto auto;
+            /*grid-gap: 10rem;*/
+            justify-content: space-between;
+            position: sticky;
+            top:0;
+            background-color:darkgoldenrod;
+            border: 3px solid black;
+        }
+        /*
+        .first{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .dropContain{
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        */
+
+    #DROPDOWN-CONTENT a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        background-color: yellow;
+        box-sizing: border-box;
+        text-align: center;
+        border: 1px solid black;
+    }
+
+    #mobileDropLang{
+        list-style-type: none;
+        padding:0;
+        margin:0;
+        width:100%;
+    }
+
+        #mobileDropLang li {
+            width: 33.33%;
+            float: left;  /*YOU WANT a <ul> horizontal AND whole screen AND scaling? Here's your code.*/
+            display: inline-block;
+            border-bottom: 1px solid black;
+        }
+
+    #loginReg{
+        list-style-type: none;
+        padding:0;
+        margin:0;
+        width:100%;
+    }
+
+    #loginReg li{
+        /*width: 49.682%;*/
+        width:50%;
+        float:left;
+        display: inline-block;
+        margin-bottom: 12px;
+        border-bottom:1px solid black;
+        border-top: 1px solid black;
+       /* border: 1px solid black;*/
+    }
+
+
+    body {
+        background-color: darkgoldenrod;
+    }
+
+    .pcMenu1{
+        display:none;
+    }
+
+    .first{
+        height: 41px;
+        width: 41px;
+    }
+
+    .navBar{
+        display:none;
+    }
+
+    #DROPDOWN-CONTENT a:hover{
+        background-color:grey;
+    }
+
+    #DROPDOWN-CONTENT {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        width:100%;
+    }
+}
+/*
+#DROPDOWN-CONTENT {
+    display: none;
+}
+*/
+
+
+
+@media screen and (min-width: 1000px){
+    body{
+        background-color:darkgoldenrod;
+    }
+
+    .gridContainer {
+        background-color: darkgoldenrod;
+        display: grid;
+        /*grid-template-rows: auto auto;*/
+        grid-template-areas:"first pcMenu1"
+            "navBar";
+        grid-gap: 0px;
+        /*height: 100vw;
+        width: 100vw;*/
+    }
+
+
+    .gridSUBCONTAINER {
+        background-color: darkgoldenrod;
+        display: grid;
+        grid-template-columns: auto auto;
+        /*grid-gap: 10rem;*/
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        grid-gap: 0px;
+        border: 3px solid black;
+        border-radius:3px;
+    }
+    
+    .dropContain{ /*MOBILE DROPDOWN CONTAINER*/
+        display: none;
+    }
+
+    .ulMenu1{
+        position:absolute;
+        right:0px;
+        top: 0px;
+        text-decoration:none;
+    }
+    
+    .ulMenu1 li{ /*UPPER LINK CONTAINER*/
+        display: inline-block;
+        list-style-type: none;
+        border-right: 5px solid black;
+        padding: 0px 20px;
+        font-size: 2vw;
+    }
+
+    a{
+        text-decoration:none;
+    }
+
+    .pcLANGdrop{ /*LANGUAGE dropdown CONTAINER. Position W3schools*/
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .pcLangContent{ /*Actual CONTENT of the LANGUAGE DROPDOWN. Absolute position W3schools*/
+        display:none;
+        position: absolute;
+    }
+
+    .pcLangContent a{ /*Styling of the LINKS inside. I took the Padding numbers from W3schools. Looks so good.*/
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        text-align:center;
+        display: block;
+        background-color: yellow;
+        z-index: 1;
+        height:100%; /*This makes area of box the link, not just the text.*/
+        width:100%;
+        font-size: 2vw;
+    }
+
+    a:hover{
+        background-color: aqua;
+    }
+
+    .pcLANGdrop:hover .pcLangContent{
+        display: block;
+    }
+
+    .first{
+        max-width: 30%;
+        height:auto;
+    }
+
+    .navBar {
+        text-align: center;
+
+        
+        position: absolute; 
+         right: 25vw; 
+        bottom: 1vw;
+       /* grid-column: 1/3;*/
+    }
+
+        .navBar a {
+            display: inline;
+            font-size: 2vw;
+            width: 100%;
+            height: 100%;
+            text-align:center;
+            text-decoration:none;
+            margin: 0px 10px;
+            padding: 0px 20px;
+        }
+
+        p{
+            padding:10px;
+            border-radius: 5px;
+        }
+}

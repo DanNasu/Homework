@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="StyleSheetHW.css" />
+    <title>HOMEWORK</title>
+
+    <script>
+        function reveal() {
+            x = document.getElementById("DROPDOWN-CONTENT");
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            }
+            else {
+                x.style.display = "none";
+            }
+        }
+        function hide() {
+            x = document.getElementById("DROPDOWN-CONTENT");
+            if (x.style.display == "block") {
+                x.style.display = "none";
+            }
+        }
+
+    </script>
+
+
+</head>
+<body>
+    <div class="gridContainer">
+        <div class="gridSUBCONTAINER">
+            <!--IMAGE LOGO-->
+            <img class="first" src="kappahd.jpg">
+
+
+
+
+            <div class="dropContain">
+                <img src="menu.svg" onclick="reveal()">    <!--MOBILE DROPDOWN-->
+
+                <div id="DROPDOWN-CONTENT" style="display:none;">
+
+
+                    <ul id="loginReg">
+                        <li><a href="Homework-ENG-LOGIN.html">LOGIN</a></li>
+                        <li><a href="Homework-ENG-REG.html">REGISTER</a></li>
+                    </ul>
+
+
+
+
+
+                    <a href="Homework-ENG.html">HOME</a>
+                    <a href="#">TREASURE TROVE</a>
+
+                    <!--<div>
+            <a href="Homework-FIN.html">FIN</a>
+            <a href="Homework-SWE.html">SWE</a>
+            <a href="Homework-ENG.html">ENG</a>
+        </div>-->
+
+
+
+                    <ul id="mobileDropLang">
+                        <li><a href="Homework-FIN-REG.html">FIN</a></li>
+                        <li><a href="Homework-SWE-REG.html">SWE</a></li>
+                        <li><a href="Homework-ENG-REG.html">ENG</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+
+            <div class="pcMenu1">
+                <ul class="ulMenu1">
+                    <li><a href="Homework-ENG-LOGIN.html">Login</a></li>
+                    <li><a href="Homework-ENG-REG.html">Register</a></li>
+                    <li style="border:none;">
+                        <div class="pcLANGdrop">
+                            <span>Language</span>
+                            <div class="pcLangContent">
+                                <a href="Homework-FIN-REG.html">FIN</a>
+                                <a href="Homework-SWE-REG.html">SWE</a>
+                                <a href="Homework-ENG-REG.html">ENG</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="navBar">
+                <a href="Homework-ENG.html" style="border-right: 5px solid black;">HOME</a>
+                <a href="#">TREASURE TROVE</a>
+            </nav>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <div class="loginFormat">
+        <h1>New Account</h1>
+
+        <form class="registerFormat" action="#" style="align-content:center; text-align:center;">
+
+            <label for="Username">USERNAME:</label>
+            <input type="text" name="Username" ; placeholder="Username" /> <br />
+            <label for="Password">PASSWORD:</label>
+            <input type="password" name="Password" placeholder="Password" /> <br />
+            <label for="email">EMAIL:</label>
+            <input type="email" name="email" placeholder="JohnDoe@email.com" /> <br />
+            <label for="phone">PHONE:</label>
+            <input type="tel" name="phone" placeholder="(xxx) xxx-xxxx" /><br />
+            <br /><br />
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+
+</body>
+</html>
